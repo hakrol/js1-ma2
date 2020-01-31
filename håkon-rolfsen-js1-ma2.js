@@ -22,20 +22,17 @@ const inputFirstname = document.querySelector("#firstName");
 inputFirstname.addEventListener("keydown", consoleLogKeydown);
 
 function consoleLogKeydown() {
-  const key = event.key.toLowerCase();
-  console.log(key);
+  console.log(event.key);
 }
 
 // QUESTION 4
 
-// I CHANGED THE CLASS NAME BY PUTTING A NUMBER AFTER, SO IT WONT GET INFLICTED BY QUESTION 2.
-
-const btnHover = document.querySelector(".btn2");
+const btnHover = document.querySelector("button");
 
 btnHover.addEventListener("mouseover", addClassHover);
 
 function addClassHover(event) {
-  event.target.classList.add(".hover");
+  event.target.classList.add("hover");
 }
 
 // QUESTION 5
@@ -44,7 +41,7 @@ const btnByDataAttribute = document.querySelector("[data-animal='dog']");
 btnByDataAttribute.addEventListener("mouseout", removeHover);
 
 function removeHover(event) {
-  event.target.classList.remove(".hover");
+  event.target.classList.remove("hover");
 }
 
 // QUESTION 6
